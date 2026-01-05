@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #loading {
+            margin-top: 20px;
+            color: blue;
+            display: none;
+        }
+        #launchDetails {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Space Launch Information Dashboard</h2>
+
+    <button onclick="loadLaunch()">Load Latest Launch</button>
+
+    <div id="loading">Loading latest launch data...</div>
+
+    <div id="launchDetails"></div>
+    <script src="./promise21.js"></script>
+
+</body>
+</html>
